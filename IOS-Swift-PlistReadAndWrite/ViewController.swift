@@ -10,16 +10,28 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var valueField: UITextField!
+    @IBOutlet weak var msgView: UILabel!
+    
+    var plistHelepr = PlistManagment()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        msgView.text = "Message : try to read from Options.plist"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func readAct(_ sender: Any) {
+        let dataVersion = plistHelepr.readPlist(namePlist: "Options", key: "dataVersion")
+        valueField?.text = dataVersion as? String
+        msgView.text = "Message : Read Done(\(dataVersion))"
     }
-
-
+    
+    @IBAction func writeAct(_ sender: Any) {
+        plistHelepr.writePlist(namePlist: "Options", key: "dataVersion", data: valueField?.text as AnyObject)
+        msgView.text = "Message : Write Done(\(valueField?.text as AnyObject))"
+    }
+    
+    
 }
 

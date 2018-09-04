@@ -12,6 +12,8 @@
 		FA605107213D827D009655E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA605105213D827D009655E9 /* Main.storyboard */; };
 		FA605109213D8282009655E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA605108213D8282009655E9 /* Assets.xcassets */; };
 		FA60510C213D8282009655E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA60510A213D8282009655E9 /* LaunchScreen.storyboard */; };
+		FA605114213D85A2009655E9 /* Options.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA605113213D85A2009655E9 /* Options.plist */; };
+		FA605116213E2ADC009655E9 /* PlistReadAndWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA605115213E2ADC009655E9 /* PlistReadAndWrite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FA605108213D8282009655E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA60510B213D8282009655E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA60510D213D8282009655E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA605113213D85A2009655E9 /* Options.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Options.plist; sourceTree = "<group>"; };
+		FA605115213E2ADC009655E9 /* PlistReadAndWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistReadAndWrite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				FA605101213D827D009655E9 /* AppDelegate.swift */,
 				FA605103213D827D009655E9 /* ViewController.swift */,
+				FA605115213E2ADC009655E9 /* PlistReadAndWrite.swift */,
+				FA605113213D85A2009655E9 /* Options.plist */,
 				FA605105213D827D009655E9 /* Main.storyboard */,
 				FA605108213D8282009655E9 /* Assets.xcassets */,
 				FA60510A213D8282009655E9 /* LaunchScreen.storyboard */,
@@ -125,6 +131,7 @@
 				FA60510C213D8282009655E9 /* LaunchScreen.storyboard in Resources */,
 				FA605109213D8282009655E9 /* Assets.xcassets in Resources */,
 				FA605107213D827D009655E9 /* Main.storyboard in Resources */,
+				FA605114213D85A2009655E9 /* Options.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +144,7 @@
 			files = (
 				FA605104213D827D009655E9 /* ViewController.swift in Sources */,
 				FA605102213D827D009655E9 /* AppDelegate.swift in Sources */,
+				FA605116213E2ADC009655E9 /* PlistReadAndWrite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
